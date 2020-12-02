@@ -1,0 +1,45 @@
+﻿@model LojaQuadrinhos.Model.Dtos.ProdutoDto
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Detalhes do produto</h4>
+            </div>
+            <div class="modal-body">
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>@Html.DisplayNameFor(model => model.Titulo)</dt>
+                    <dd>@Html.DisplayFor(model => model.Titulo)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Serie)</dt>
+                    <dd>@Html.DisplayFor(model => model.Serie)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Ano)</dt>
+                    <dd>@Html.DisplayFor(model => model.Ano)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Autor)</dt>
+                    <dd>@Html.DisplayFor(model => model.Autor)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Editora)</dt>
+                    <dd>@Html.DisplayFor(model => model.Editora)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Categoria.Descricao)</dt>
+                    <dd>@Html.DisplayFor(model => model.Categoria.Descricao)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Paginas)</dt>
+                    <dd>@Html.DisplayFor(model => model.Paginas)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Idioma)</dt>
+                    <dd>@Html.DisplayFor(model => model.Idioma)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Quantidade)</dt>
+                    <dd>@Html.DisplayFor(model => model.Quantidade)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Preco)</dt>
+                    <dd>@Html.DisplayFor(model => model.Preco)</dd>
+
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+

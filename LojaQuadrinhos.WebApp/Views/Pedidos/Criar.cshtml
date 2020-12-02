@@ -1,0 +1,134 @@
+﻿@model LojaQuadrinhos.Model.Dtos.PedidoDto
+
+@{
+    ViewData["Title"] = "Pedido";
+}
+
+<h4>Pedido</h4>
+@if (@Html.ViewData.ModelState.ErrorCount > 0)
+{
+    <h3>
+        @Html.ValidationSummary()
+    </h3>
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Usuario" class="control-label"></label>
+                <input asp-for="Usuario" class="form-control" readOnly="readonly" />
+                <span asp-validation-for="Usuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataDoPedido" class="control-label"></label>
+                <input asp-for="DataDoPedido" class="form-control" readOnly="readonly" />
+                <span asp-validation-for="DataDoPedido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorTotal" class="control-label"></label>
+                <input asp-for="ValorTotal" class="form-control" readOnly="readonly" />
+                <span asp-validation-for="ValorTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProdutoId" class="control-label"></label>
+                <select asp-for="ProdutoId"
+                        asp-items="@ViewBag.Produtos"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantidade" class="control-label"></label>
+                <input asp-for="Quantidade" class="form-control" />
+                <span asp-validation-for="Quantidade" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" asp-controller="Pedidos" asp-action="AdicionarProdutoAoPedido">Adicionar</button>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PedidoProdutosDto.FirstOrDefault().ProdutoID)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PedidoProdutosDto.FirstOrDefault().Titulo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PedidoProdutosDto.FirstOrDefault().PrecoUnitario)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PedidoProdutosDto.FirstOrDefault().PrecoTotal)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PedidoProdutosDto.FirstOrDefault().QuantidadeDeProduto)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.PedidoProdutosDto.Count; i++)
+                    {
+
+                        <tr>
+                            <td>
+                                @Html.EditorFor(model => model.PedidoProdutosDto[i].ProdutoID, new { htmlAttributes = new { @readonly = "readonly" } })
+                            </td>
+
+                            <td>
+                                @Html.EditorFor(model => model.PedidoProdutosDto[i].Titulo, new { htmlAttributes = new { @readonly = "readonly" } })
+                            </td>
+                            <td>
+                                @Html.EditorFor(model => model.PedidoProdutosDto[i].PrecoUnitario, new { htmlAttributes = new { @readonly = "readonly" } })
+                            </td>
+                            <td>
+                                @Html.EditorFor(model => model.PedidoProdutosDto[i].PrecoTotal, new { htmlAttributes = new { @readonly = "readonly" } })
+                            </td>
+                            <td>
+                                @Html.EditorFor(model => model.PedidoProdutosDto[i].QuantidadeDeProduto, new { htmlAttributes = new { @readonly = "readonly" } })
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success details" data-id="@Model.PedidoProdutosDto[i].ProdutoID">Detalhes<i class="glyphicon glyphicon-file"></i></button>
+                            </td>
+                            <td>
+                                <button type="submit" class="btn btn-primary" asp-route-id="@Model.PedidoProdutosDto[i].ProdutoID" asp-controller="Pedidos" asp-action="ExcluirProdutoDoPedido">Excluir</button>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+
+            <div class="modal" id="modal">
+
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" asp-controller="Pedidos" asp-action="Criar">Finalizar Pedido</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar para a lista.</a>
+</div>
+
+@section scripts{
+    <script>
+        $(function () {
+            $(".details").click(function () {
+                var id = $(this).attr("data-id");
+                $("#modal").load("DetalhesProduto?id=" + id, function () {
+                    $("#modal").modal();
+                })
+            });
+
+        })
+    </script>
+}
+
+

@@ -1,0 +1,21 @@
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\bin\Debug\netcoreapp3.1\LojaQuadrinhos.Data.deps.json
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\bin\Debug\netcoreapp3.1\LojaQuadrinhos.Data.runtimeconfig.json
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\bin\Debug\netcoreapp3.1\LojaQuadrinhos.Data.runtimeconfig.dev.json
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\bin\Debug\netcoreapp3.1\LojaQuadrinhos.Data.dll
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\bin\Debug\netcoreapp3.1\LojaQuadrinhos.Data.pdb
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\bin\Debug\netcoreapp3.1\LojaQuadrinhos.Model.dll
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\bin\Debug\netcoreapp3.1\LojaQuadrinhos.Model.pdb
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.csprojAssemblyReference.cache
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.AssemblyInfoInputs.cache
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.AssemblyInfo.cs
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.csproj.CoreCompileInputs.cache
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.csproj.CopyComplete
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.dll
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.pdb
+C:\Users\Renata\source\repos\Loja\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.genruntimeconfig.cache
+C:\Users\Renata\source\repos\Loja-com view normal\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.csprojAssemblyReference.cache
+C:\Users\Renata\source\repos\Loja-com view normal\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.AssemblyInfoInputs.cache
+C:\Users\Renata\source\repos\Loja-com view normal\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.AssemblyInfo.cs
+C:\Users\Renata\source\repos\Loja-com view normal\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.csproj.CoreCompileInputs.cache
+C:\Users\Renata\source\repos\Loja-com view normal\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.dll
+C:\Users\Renata\source\repos\Loja-com view normal\LojaQuadrinhos.Data\obj\Debug\netcoreapp3.1\LojaQuadrinhos.Data.pdb
